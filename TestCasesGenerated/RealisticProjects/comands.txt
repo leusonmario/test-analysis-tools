@@ -1,5 +1,20 @@
 Storm:
 
+ad2be67
 EvoDiff: java -jar /home/paulo/Documentos/PHD/projects/LocalAnalysis/EvoSuite/evosuite-1.0.6.jar  -regressionSuite -projectCP $(find /home/paulo/Documentos/PHD/Testes2.0/example-project-evosuite-diff/left/target/dependency/ | paste -sd ":")":/home/paulo/Documentos/PHD/Testes2.0/example-project-evosuite-diff/left/target/classes/" -Dregressioncp=$(find /home/paulo/Documentos/PHD/Testes2.0/example-project-evosuite-diff/base/target/dependency/ | paste -sd ":")":/home/paulo/Documentos/PHD/Testes2.0/example-project-evosuite-diff/base/target/classes" -class br.com.Ball
+
 EvoNormal: java -jar /home/paulo/Documentos/PHD/projects/LocalAnalysis/EvoSuite/evosuite-1.0.6.jar -projectCP /home/paulo/Documentos/PHD/Testes2.0/example-project-evosuite-diff/left/target/classes:/home/paulo/Documentos/PHD/Testes2.0/example-project-evosuite-diff/left/target/dependency -class br.com.Ball
+
 Randoop: java -classpath /home/paulo/Documentos/PHD/Testes2.0/example-project-evosuite-diff/left/target/classes:/home/paulo/Documentos/PHD/Randoop/randoop-4.1.2/randoop-all-4.1.2.jar randoop.main.Main gentests --classlist=/home/paulo/Documentos/PHD/Testes2.0/SampleTests/Analysis/RealisticProjects/Randoop/storm/myClasses.txt --time-limit=60 --flaky-test-behavior=DISCARD --methodlist=/home/paulo/Documentos/PHD/Testes2.0/SampleTests/Analysis/RealisticProjects/Randoop/storm/myMethods.txt
+
+Traccar:
+4d7805f
+
+EvoDiff: 
+java -jar /home/paulo/Documentos/PHD/projects/LocalAnalysis/EvoSuite/evosuite-1.0.6.jar  -regressionSuite -projectCP "/home/paulo/Documentos/PHD/Testes2.0/test-analysis-tools/SourceCode/RealisticProjects/traccar/4d7805f/left/target/classes/" -Dregressioncp="/home/paulo/Documentos/PHD/Testes2.0/test-analysis-tools/SourceCode/RealisticProjects/traccar/4d7805f/base/target/classes" -class org.br.Context
+
+EvoNormal: 
+java -jar /home/paulo/Documentos/PHD/projects/LocalAnalysis/EvoSuite/evosuite-1.0.6.jar -projectCP /home/paulo/Documentos/PHD/Testes2.0/test-analysis-tools/SourceCode/RealisticProjects/traccar/4d7805f/left/target/classes/ -class org.br.Context
+
+Randoop: 
+java -classpath /home/paulo/Documentos/PHD/Testes2.0/test-analysis-tools/SourceCode/RealisticProjects/traccar/4d7805f/left/target/classes/:/home/paulo/Documentos/PHD/Randoop/randoop-4.1.2/randoop-all-4.1.2.jar randoop.main.Main gentests --classlist=/home/paulo/Documentos/PHD/Testes2.0/test-analysis-tools/TestCasesGenerated/RealisticProjects/Randoop/traccar-4d7805f/myClasses.txt --time-limit=60 --flaky-test-behavior=DISCARD --methodlist=/home/paulo/Documentos/PHD/Testes2.0/test-analysis-tools/TestCasesGenerated/RealisticProjects/Randoop/traccar-4d7805f/myMethods.txt

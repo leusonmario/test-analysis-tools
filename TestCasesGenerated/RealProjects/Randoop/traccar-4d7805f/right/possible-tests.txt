@@ -1,0 +1,2901 @@
+
+@Test
+    public void test0506() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0506");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        long long3 = tripsConfig0.getMinimalNoDataDuration();
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+    }
+
+
+@Test
+    public void test0534() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0534");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setGreedyParking(false);
+        long long10 = tripsConfig0.getMinimalNoDataDuration();
+        boolean boolean11 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 97L + "'", long10 == 97L);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+    }
+
+
+@Test
+    public void test0535() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0535");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        long long8 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 100L + "'", long8 == 100L);
+    }
+
+
+@Test
+    public void test0541() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0541");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        tripsConfig0.setMinimalTripDistance(100.0d);
+        tripsConfig0.setGreedyParking(true);
+    }
+
+
+@Test
+    public void test0542() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0542");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        boolean boolean5 = tripsConfig0.getGreedyParking();
+        long long6 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalTripDuration((long) (byte) 100);
+        tripsConfig0.setMinimalTripDuration((long) (-1));
+        tripsConfig0.setMinimalTripDistance((double) (byte) 1);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 35L + "'", long6 == 35L);
+    }
+
+
+@Test
+    public void test0573() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0573");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalParkingDuration(35L);
+        java.lang.Class<?> wildcardClass8 = tripsConfig0.getClass();
+        long long9 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 35L + "'", long9 == 35L);
+    }
+
+
+@Test
+    public void test0575() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0575");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        java.lang.Class<?> wildcardClass8 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+
+@Test
+    public void test0583() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0583");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setMinimalTripDistance((double) 'a');
+        double double9 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + double9 + "' != '" + 97.0d + "'", double9 == 97.0d);
+    }
+
+
+@Test
+    public void test0596() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0596");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        boolean boolean3 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+    }
+
+
+@Test
+    public void test0599() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0599");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setGreedyParking(false);
+    }
+
+
+@Test
+    public void test0600() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0600");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setGreedyParking(false);
+        long long10 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 97L + "'", long10 == 97L);
+    }
+
+
+@Test
+    public void test0614() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0614");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalTripDistance((double) (-1L));
+        long long8 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 35L + "'", long8 == 35L);
+    }
+
+
+@Test
+    public void test0621() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0621");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalNoDataDuration(97L);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+    }
+
+
+@Test
+    public void test0632() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0632");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        java.lang.Class<?> wildcardClass2 = tripsConfig0.getClass();
+        long long3 = tripsConfig0.getMinimalTripDuration();
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass2);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+
+@Test
+    public void test0645() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0645");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration(1L);
+        tripsConfig0.setMinimalParkingDuration(0L);
+        tripsConfig0.setMinimalTripDistance((double) (byte) 0);
+        long long15 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertTrue("'" + long15 + "' != '" + 0L + "'", long15 == 0L);
+    }
+
+
+@Test
+    public void test0655() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0655");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalNoDataDuration(97L);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+    }
+
+
+@Test
+    public void test0676() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0676");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        double double1 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        org.junit.Assert.assertTrue("'" + double1 + "' != '" + 0.0d + "'", double1 == 0.0d);
+    }
+
+
+@Test
+    public void test0685() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0685");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        tripsConfig0.setMinimalNoDataDuration((long) (-1));
+        tripsConfig0.setMinimalNoDataDuration((long) 0);
+    }
+
+
+@Test
+    public void test0697() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0697");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        double double1 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 0);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertTrue("'" + double1 + "' != '" + 0.0d + "'", double1 == 0.0d);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+    }
+
+
+@Test
+    public void test0708() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0708");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        long long7 = tripsConfig0.getMinimalTripDuration();
+        long long8 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 35L + "'", long8 == 35L);
+    }
+
+
+@Test
+    public void test0721() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0721");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        tripsConfig0.setMinimalTripDistance((double) 97L);
+        double double10 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 97.0d + "'", double10 == 97.0d);
+    }
+
+
+@Test
+    public void test0733() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0733");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) '4');
+        long long7 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration((long) (byte) 10);
+        tripsConfig0.setMinimalTripDistance((double) 100L);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
+    }
+
+
+@Test
+    public void test0739() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0739");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        double double6 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + (-1L) + "'", long4 == (-1L));
+        org.junit.Assert.assertNotNull(wildcardClass5);
+        org.junit.Assert.assertTrue("'" + double6 + "' != '" + 0.0d + "'", double6 == 0.0d);
+    }
+
+
+@Test
+    public void test0750() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0750");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration((long) 1);
+        double double11 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        org.junit.Assert.assertTrue("'" + double11 + "' != '" + 0.0d + "'", double11 == 0.0d);
+    }
+
+
+@Test
+    public void test0756() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0756");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) '4');
+        long long7 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration((long) (byte) 10);
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 10);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
+    }
+
+
+@Test
+    public void test0769() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0769");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalTripDistance((double) (-1));
+        tripsConfig0.setMinimalTripDuration((long) (byte) 100);
+        long long11 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 0L + "'", long11 == 0L);
+    }
+
+
+@Test
+    public void test0808() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0808");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 10);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+    }
+
+
+@Test
+    public void test0816() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0816");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 1);
+        double double10 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalParkingDuration(52L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 0.0d + "'", double10 == 0.0d);
+    }
+
+
+@Test
+    public void test0821() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0821");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        java.lang.Class<?> wildcardClass2 = tripsConfig0.getClass();
+        boolean boolean3 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration(52L);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+    }
+
+
+@Test
+    public void test0836() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0836");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        boolean boolean5 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+    }
+
+
+@Test
+    public void test0845() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0845");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        tripsConfig0.setMinimalNoDataDuration((long) (-1));
+        double double7 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + double7 + "' != '" + (-1.0d) + "'", double7 == (-1.0d));
+    }
+
+
+@Test
+    public void test0847() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0847");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        long long6 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(false);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 0L + "'", long6 == 0L);
+    }
+
+
+@Test
+    public void test0849() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0849");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long8 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 10);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + (-1L) + "'", long8 == (-1L));
+    }
+
+
+@Test
+    public void test0861() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0861");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        boolean boolean5 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+    }
+
+
+@Test
+    public void test0872() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0872");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        tripsConfig0.setMinimalParkingDuration((long) 1);
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 1);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+    }
+
+
+@Test
+    public void test0884() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0884");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        double double3 = tripsConfig0.getMinimalTripDistance();
+        double double4 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
+        org.junit.Assert.assertTrue("'" + double4 + "' != '" + 0.0d + "'", double4 == 0.0d);
+    }
+
+
+@Test
+    public void test0926() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0926");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration((long) 1);
+        long long11 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDistance((double) (byte) 0);
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 1L + "'", long11 == 1L);
+    }
+
+
+@Test
+    public void test0939() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0939");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        boolean boolean5 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setGreedyParking(true);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+    }
+
+
+@Test
+    public void test0975() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0975");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalTripDistance((double) (-1));
+        tripsConfig0.setMinimalTripDuration((long) (byte) 100);
+        long long11 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 97L + "'", long11 == 97L);
+    }
+
+
+@Test
+    public void test0980() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0980");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        tripsConfig0.setMinimalNoDataDuration((long) (short) -1);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+    }
+
+
+@Test
+    public void test0992() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0992");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((double) (short) 0);
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 0);
+        java.lang.Class<?> wildcardClass13 = tripsConfig0.getClass();
+        boolean boolean14 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+
+@Test
+    public void test0997() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest1.test0997");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration(1L);
+    }
+
+
+@Test
+    public void test1008() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1008");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 100);
+        tripsConfig0.setMinimalParkingDuration(0L);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test1033() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1033");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((double) (short) 0);
+        long long10 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 97L + "'", long10 == 97L);
+    }
+
+
+@Test
+    public void test1041() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1041");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (short) 10);
+        double double3 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
+    }
+
+
+@Test
+    public void test1043() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1043");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration(10L);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 10L + "'", long4 == 10L);
+    }
+
+
+@Test
+    public void test1051() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1051");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((double) (short) 0);
+        long long10 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalNoDataDuration(35L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 35L + "'", long10 == 35L);
+    }
+
+
+@Test
+    public void test1068() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1068");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 1);
+        java.lang.Class<?> wildcardClass11 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+
+@Test
+    public void test1113() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1113");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        java.lang.Class<?> wildcardClass2 = tripsConfig0.getClass();
+        boolean boolean3 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalTripDistance((double) (byte) -1);
+        boolean boolean6 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass2);
+        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+    }
+
+
+@Test
+    public void test1141() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1141");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        double double9 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertTrue("'" + double9 + "' != '" + 0.0d + "'", double9 == 0.0d);
+    }
+
+
+@Test
+    public void test1144() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1144");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalTripDistance((double) 100);
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+    }
+
+
+@Test
+    public void test1169() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1169");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        java.lang.Class<?> wildcardClass8 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+
+@Test
+    public void test1175() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1175");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration(1L);
+        tripsConfig0.setMinimalParkingDuration(0L);
+        tripsConfig0.setMinimalNoDataDuration((long) '#');
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+    }
+
+
+@Test
+    public void test1204() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1204");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        double double11 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalTripDistance((double) 1.0f);
+        org.junit.Assert.assertTrue("'" + double11 + "' != '" + 0.0d + "'", double11 == 0.0d);
+    }
+
+
+@Test
+    public void test1207() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1207");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        tripsConfig0.setMinimalTripDuration(35L);
+        long long14 = tripsConfig0.getMinimalNoDataDuration();
+        long long15 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long14 + "' != '" + 97L + "'", long14 == 97L);
+        org.junit.Assert.assertTrue("'" + long15 + "' != '" + 97L + "'", long15 == 97L);
+    }
+
+
+@Test
+    public void test1210() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1210");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        long long9 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 97L + "'", long9 == 97L);
+    }
+
+
+@Test
+    public void test1217() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1217");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) (short) -1);
+        long long7 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalTripDistance((double) (byte) 100);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
+    }
+
+
+@Test
+    public void test1226() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1226");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        java.lang.Class<?> wildcardClass9 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+
+@Test
+    public void test1252() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1252");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) '4');
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test1272() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1272");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        tripsConfig0.setMinimalNoDataDuration((long) (-1));
+        boolean boolean7 = tripsConfig0.getGreedyParking();
+        java.lang.Class<?> wildcardClass8 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+
+@Test
+    public void test1284() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1284");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance((double) 'a');
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + (-1L) + "'", long4 == (-1L));
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test1302() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1302");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long7 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(true);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
+    }
+
+
+@Test
+    public void test1305() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1305");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 1);
+        double double10 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setGreedyParking(true);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 0.0d + "'", double10 == 0.0d);
+    }
+
+
+@Test
+    public void test1308() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1308");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(35.0d);
+        long long9 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 35L + "'", long9 == 35L);
+    }
+
+
+@Test
+    public void test1334() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1334");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        double double7 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + double7 + "' != '" + 0.0d + "'", double7 == 0.0d);
+    }
+
+
+@Test
+    public void test1336() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1336");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(false);
+        long long8 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 35L + "'", long8 == 35L);
+    }
+
+
+@Test
+    public void test1347() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1347");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalTripDistance((double) (byte) 10);
+        long long7 = tripsConfig0.getMinimalTripDuration();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration((long) '4');
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) -1);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+    }
+
+
+@Test
+    public void test1409() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1409");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        long long9 = tripsConfig0.getMinimalParkingDuration();
+        long long10 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 10L + "'", long9 == 10L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 97L + "'", long10 == 97L);
+    }
+
+
+@Test
+    public void test1435() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1435");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        double double3 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 10);
+        org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
+    }
+
+
+@Test
+    public void test1462() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1462");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        long long6 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 1);
+        tripsConfig0.setMinimalTripDuration((long) 10);
+        tripsConfig0.setMinimalTripDuration((long) (byte) 0);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 35L + "'", long6 == 35L);
+    }
+
+
+@Test
+    public void test1484() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1484");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        tripsConfig0.setMinimalTripDistance((double) (-1));
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        java.lang.Class<?> wildcardClass9 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+
+@Test
+    public void test2019() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2019");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setGreedyParking(false);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test2026() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2026");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        tripsConfig0.setMinimalTripDistance(100.0d);
+        tripsConfig0.setMinimalTripDuration(52L);
+        double double9 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalTripDuration((long) (short) 100);
+        org.junit.Assert.assertTrue("'" + double9 + "' != '" + 100.0d + "'", double9 == 100.0d);
+    }
+
+
+@Test
+    public void test2034() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2034");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        long long10 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + (-1L) + "'", long10 == (-1L));
+    }
+
+
+@Test
+    public void test2060() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2060");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) 0);
+        tripsConfig0.setMinimalTripDistance((double) 'a');
+        long long6 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        boolean boolean9 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setGreedyParking(false);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 0L + "'", long6 == 0L);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+    }
+
+
+@Test
+    public void test2068() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2068");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setMinimalTripDistance(0.0d);
+    }
+
+
+@Test
+    public void test2070() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2070");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long9 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDistance(10.0d);
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 0);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 10L + "'", long9 == 10L);
+    }
+
+
+@Test
+    public void test2080() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2080");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((double) (short) 0);
+        long long10 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalTripDuration((long) (byte) 1);
+        tripsConfig0.setMinimalTripDistance(52.0d);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 35L + "'", long10 == 35L);
+    }
+
+
+@Test
+    public void test2096() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2096");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        tripsConfig0.setMinimalTripDistance((double) 97L);
+        tripsConfig0.setMinimalTripDistance((double) 1.0f);
+        tripsConfig0.setGreedyParking(true);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+    }
+
+
+@Test
+    public void test2112() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2112");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long9 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDistance(10.0d);
+        tripsConfig0.setMinimalNoDataDuration(100L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 10L + "'", long9 == 10L);
+    }
+
+
+@Test
+    public void test2119() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2119");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration(1L);
+        tripsConfig0.setMinimalNoDataDuration(100L);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+    }
+
+
+@Test
+    public void test2185() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2185");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration((long) (-1));
+    }
+
+
+@Test
+    public void test2187() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2187");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        tripsConfig0.setMinimalTripDistance((double) (-1));
+        double double7 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + double7 + "' != '" + (-1.0d) + "'", double7 == (-1.0d));
+    }
+
+
+@Test
+    public void test2192() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2192");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        long long6 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 0L + "'", long6 == 0L);
+    }
+
+
+@Test
+    public void test2197() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2197");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        long long9 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalTripDistance((double) 0);
+        tripsConfig0.setGreedyParking(false);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 35L + "'", long9 == 35L);
+    }
+
+
+@Test
+    public void test2201() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2201");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        long long3 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalTripDistance((double) 1L);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 35L + "'", long3 == 35L);
+    }
+
+
+@Test
+    public void test2214() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2214");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 10);
+        tripsConfig0.setMinimalNoDataDuration(10L);
+    }
+
+
+@Test
+    public void test2216() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2216");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) 0);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(true);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test2256() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2256");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        tripsConfig0.setMinimalTripDuration(35L);
+        long long14 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setGreedyParking(false);
+        double double17 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long14 + "' != '" + 97L + "'", long14 == 97L);
+        org.junit.Assert.assertTrue("'" + double17 + "' != '" + (-1.0d) + "'", double17 == (-1.0d));
+    }
+
+
+@Test
+    public void test2263() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2263");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration(52L);
+        long long7 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalTripDuration(32L);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
+    }
+
+
+@Test
+    public void test2308() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2308");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (byte) 100);
+        long long11 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 10L + "'", long11 == 10L);
+    }
+
+
+@Test
+    public void test2316() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2316");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((double) (short) 0);
+        long long10 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalTripDuration(0L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 35L + "'", long10 == 35L);
+    }
+
+
+@Test
+    public void test2319() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2319");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) 0);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setGreedyParking(true);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+    }
+
+
+@Test
+    public void test2329() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2329");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalParkingDuration(35L);
+        tripsConfig0.setMinimalTripDistance(0.0d);
+        double double10 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 0.0d + "'", double10 == 0.0d);
+    }
+
+
+@Test
+    public void test2333() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2333");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        long long3 = tripsConfig0.getMinimalTripDuration();
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+    }
+
+
+@Test
+    public void test2338() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2338");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        boolean boolean9 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 0);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+    }
+
+
+@Test
+    public void test2362() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2362");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration(35L);
+        boolean boolean10 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+
+@Test
+    public void test2383() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2383");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        long long8 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration(0L);
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 1);
+        tripsConfig0.setGreedyParking(false);
+        java.lang.Class<?> wildcardClass15 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) 1);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 0L + "'", long8 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+
+@Test
+    public void test2384() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2384");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        long long6 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalParkingDuration(1L);
+        tripsConfig0.setMinimalTripDistance(10.0d);
+        tripsConfig0.setMinimalTripDuration((long) 100);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 35L + "'", long6 == 35L);
+    }
+
+
+@Test
+    public void test2386() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2386");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        long long10 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration(97L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + (-1L) + "'", long10 == (-1L));
+    }
+
+
+@Test
+    public void test2396() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2396");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long9 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration((long) (byte) 1);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 10L + "'", long9 == 10L);
+    }
+
+
+@Test
+    public void test2400() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2400");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        long long10 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDistance((double) (-1.0f));
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 97L + "'", long10 == 97L);
+    }
+
+
+@Test
+    public void test2412() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2412");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance((double) 10.0f);
+        tripsConfig0.setMinimalTripDuration(32L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+    }
+
+
+@Test
+    public void test2424() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2424");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        boolean boolean8 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalParkingDuration((long) (short) 100);
+        tripsConfig0.setGreedyParking(false);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+
+@Test
+    public void test2428() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2428");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        java.lang.Class<?> wildcardClass11 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration(10L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+
+@Test
+    public void test2438() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2438");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        tripsConfig0.setMinimalTripDistance((double) 97L);
+        tripsConfig0.setMinimalTripDuration(0L);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+    }
+
+
+@Test
+    public void test2454() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2454");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        java.lang.Class<?> wildcardClass12 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertNotNull(wildcardClass12);
+    }
+
+
+@Test
+    public void test2455() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest4.test2455");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) 0);
+        tripsConfig0.setMinimalTripDistance((double) 'a');
+        boolean boolean6 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+    }
+
+
+@Test
+    public void test0001() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0001");
+        java.lang.Object obj0 = new java.lang.Object();
+        java.lang.Class<?> wildcardClass1 = obj0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+    }
+
+
+@Test
+    public void test0002() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0002");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setGreedyParking(true);
+    }
+
+
+@Test
+    public void test0011() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0011");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration(97L);
+        tripsConfig0.setMinimalNoDataDuration(35L);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + (-1L) + "'", long4 == (-1L));
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+
+@Test
+    public void test0013() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0013");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        boolean boolean4 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test0035() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0035");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) -1);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+    }
+
+
+@Test
+    public void test0043() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0043");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test0045() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0045");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) 0);
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+    }
+
+
+@Test
+    public void test0057() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0057");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(false);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+    }
+
+
+@Test
+    public void test0058() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0058");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        tripsConfig0.setMinimalParkingDuration((long) 0);
+    }
+
+
+@Test
+    public void test0062() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0062");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        tripsConfig0.setMinimalTripDistance((double) (byte) 0);
+        long long13 = tripsConfig0.getMinimalTripDuration();
+        java.lang.Class<?> wildcardClass14 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + long13 + "' != '" + 35L + "'", long13 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass14);
+    }
+
+
+@Test
+    public void test0065() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0065");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) (short) -1);
+        boolean boolean7 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+    }
+
+
+@Test
+    public void test0086() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0086");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        boolean boolean4 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        boolean boolean7 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalTripDuration((long) 1);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+    }
+
+
+@Test
+    public void test0134() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0134");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 1);
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        long long13 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertTrue("'" + long13 + "' != '" + 0L + "'", long13 == 0L);
+    }
+
+
+@Test
+    public void test0149() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0149");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration(1L);
+        tripsConfig0.setMinimalTripDuration((long) (byte) 0);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+    }
+
+
+@Test
+    public void test0172() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0172");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        tripsConfig0.setMinimalTripDistance((double) (short) 0);
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        long long11 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 97L + "'", long11 == 97L);
+    }
+
+
+@Test
+    public void test0193() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0193");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        boolean boolean5 = tripsConfig0.getGreedyParking();
+        boolean boolean6 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalTripDuration(52L);
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalParkingDuration((long) ' ');
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+    }
+
+
+@Test
+    public void test0205() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0205");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        boolean boolean4 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        tripsConfig0.setGreedyParking(false);
+        long long9 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 0L + "'", long9 == 0L);
+    }
+
+
+@Test
+    public void test0211() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0211");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        long long8 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDuration(1L);
+        tripsConfig0.setMinimalParkingDuration(0L);
+        long long13 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 97L + "'", long8 == 97L);
+        org.junit.Assert.assertTrue("'" + long13 + "' != '" + 1L + "'", long13 == 1L);
+    }
+
+
+@Test
+    public void test0216() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0216");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        boolean boolean8 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+
+@Test
+    public void test0222() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0222");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long9 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 10L + "'", long9 == 10L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+    }
+
+
+@Test
+    public void test0234() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0234");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        long long11 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 97L + "'", long11 == 97L);
+    }
+
+
+@Test
+    public void test0242() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0242");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        long long9 = tripsConfig0.getMinimalParkingDuration();
+        long long10 = tripsConfig0.getMinimalParkingDuration();
+        java.lang.Class<?> wildcardClass11 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 10L + "'", long9 == 10L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 10L + "'", long10 == 10L);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+
+@Test
+    public void test0251() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0251");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((-1L));
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+    }
+
+
+@Test
+    public void test0253() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0253");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 10);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+    }
+
+
+@Test
+    public void test0254() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0254");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        boolean boolean4 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        boolean boolean7 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 100);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+    }
+
+
+@Test
+    public void test0260() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0260");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+    }
+
+
+@Test
+    public void test0269() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0269");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        tripsConfig0.setMinimalTripDistance((double) (byte) 0);
+        long long13 = tripsConfig0.getMinimalTripDuration();
+        long long14 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long13 + "' != '" + 35L + "'", long13 == 35L);
+        org.junit.Assert.assertTrue("'" + long14 + "' != '" + 0L + "'", long14 == 0L);
+    }
+
+
+@Test
+    public void test0298() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0298");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        tripsConfig0.setMinimalTripDistance((double) 97L);
+        tripsConfig0.setGreedyParking(true);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+    }
+
+
+@Test
+    public void test0302() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0302");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        boolean boolean4 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+    }
+
+
+@Test
+    public void test0304() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0304");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        double double8 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + double8 + "' != '" + 0.0d + "'", double8 == 0.0d);
+    }
+
+
+@Test
+    public void test0309() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0309");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        long long6 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 1);
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 10);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 35L + "'", long6 == 35L);
+    }
+
+
+@Test
+    public void test0314() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0314");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration(97L);
+        java.lang.Class<?> wildcardClass8 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + (-1L) + "'", long4 == (-1L));
+        org.junit.Assert.assertNotNull(wildcardClass5);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+
+@Test
+    public void test0316() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0316");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        tripsConfig0.setMinimalParkingDuration((long) 1);
+        long long6 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 0L + "'", long6 == 0L);
+    }
+
+
+@Test
+    public void test0329() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0329");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long3 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        tripsConfig0.setMinimalTripDistance((double) 97L);
+        long long10 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 100L + "'", long10 == 100L);
+    }
+
+
+@Test
+    public void test0339() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0339");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalTripDistance((double) (byte) 10);
+        double double7 = tripsConfig0.getMinimalTripDistance();
+        java.lang.Class<?> wildcardClass8 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + double7 + "' != '" + 10.0d + "'", double7 == 10.0d);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+
+@Test
+    public void test0340() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0340");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        long long6 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalTripDistance((double) (byte) 0);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 35L + "'", long6 == 35L);
+    }
+
+
+@Test
+    public void test0342() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0342");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+    }
+
+
+@Test
+    public void test0346() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0346");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        long long6 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setGreedyParking(true);
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 1);
+        tripsConfig0.setGreedyParking(true);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 35L + "'", long6 == 35L);
+    }
+
+
+@Test
+    public void test0353() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0353");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        long long7 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
+    }
+
+
+@Test
+    public void test0355() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0355");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setGreedyParking(false);
+        double double8 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+        org.junit.Assert.assertTrue("'" + double8 + "' != '" + 0.0d + "'", double8 == 0.0d);
+    }
+
+
+@Test
+    public void test0370() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0370");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalParkingDuration((long) '4');
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+    }
+
+
+@Test
+    public void test0391() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0391");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        tripsConfig0.setMinimalTripDistance((double) (byte) 0);
+        long long13 = tripsConfig0.getMinimalTripDuration();
+        double double14 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertTrue("'" + long13 + "' != '" + 35L + "'", long13 == 35L);
+        org.junit.Assert.assertTrue("'" + double14 + "' != '" + 0.0d + "'", double14 == 0.0d);
+    }
+
+
+@Test
+    public void test0395() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0395");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (short) 10);
+        long long7 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + (-1L) + "'", long4 == (-1L));
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 10L + "'", long7 == 10L);
+    }
+
+
+@Test
+    public void test0406() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0406");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (byte) 100);
+        boolean boolean11 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+    }
+
+
+@Test
+    public void test0416() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0416");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+    }
+
+
+@Test
+    public void test0452() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0452");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 100);
+        long long10 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 35L + "'", long10 == 35L);
+    }
+
+
+@Test
+    public void test0453() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0453");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        long long3 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDistance((double) 0.0f);
+        org.junit.Assert.assertTrue("'" + long3 + "' != '" + 0L + "'", long3 == 0L);
+    }
+
+
+@Test
+    public void test0485() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0485");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        double double6 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertNotNull(wildcardClass5);
+        org.junit.Assert.assertTrue("'" + double6 + "' != '" + 0.0d + "'", double6 == 0.0d);
+    }
+
+
+@Test
+    public void test0500() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0500");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        tripsConfig0.setMinimalTripDuration((long) 10);
+    }
+
+
+@Test
+    public void test1573() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1573");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        double double10 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 0.0d + "'", double10 == 0.0d);
+    }
+
+
+@Test
+    public void test1577() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1577");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        boolean boolean8 = tripsConfig0.getGreedyParking();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        java.lang.Class<?> wildcardClass11 = tripsConfig0.getClass();
+        double double12 = tripsConfig0.getMinimalTripDistance();
+        org.junit.Assert.assertNotNull(wildcardClass7);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+        org.junit.Assert.assertTrue("'" + double12 + "' != '" + 0.0d + "'", double12 == 0.0d);
+    }
+
+
+@Test
+    public void test1578() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1578");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        long long8 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalTripDistance(10.0d);
+        tripsConfig0.setMinimalTripDuration((long) 10);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long8 + "' != '" + 0L + "'", long8 == 0L);
+    }
+
+
+@Test
+    public void test1594() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1594");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass4 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) '4');
+        long long7 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertNotNull(wildcardClass4);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 52L + "'", long7 == 52L);
+    }
+
+
+@Test
+    public void test1597() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1597");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        long long7 = tripsConfig0.getMinimalTripDuration();
+        boolean boolean8 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 35L + "'", long7 == 35L);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+
+@Test
+    public void test1649() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1649");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setGreedyParking(false);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+    }
+
+
+@Test
+    public void test1657() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1657");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration((long) 1);
+        double double11 = tripsConfig0.getMinimalTripDistance();
+        long long12 = tripsConfig0.getMinimalParkingDuration();
+        org.junit.Assert.assertTrue("'" + double11 + "' != '" + 0.0d + "'", double11 == 0.0d);
+        org.junit.Assert.assertTrue("'" + long12 + "' != '" + 10L + "'", long12 == 10L);
+    }
+
+
+@Test
+    public void test1695() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1695");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) ' ');
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+
+@Test
+    public void test1718() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1718");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        boolean boolean4 = tripsConfig0.getGreedyParking();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration(32L);
+        tripsConfig0.setMinimalNoDataDuration((long) 0);
+        tripsConfig0.setMinimalNoDataDuration((long) ' ');
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+
+@Test
+    public void test1719() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1719");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration((long) (short) 10);
+        tripsConfig0.setMinimalParkingDuration((long) (short) 10);
+    }
+
+
+@Test
+    public void test1731() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1731");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        boolean boolean6 = tripsConfig0.getGreedyParking();
+        java.lang.Class<?> wildcardClass7 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) (short) -1);
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+
+@Test
+    public void test1745() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1745");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        long long10 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) '#');
+        tripsConfig0.setMinimalTripDuration((long) '4');
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + long10 + "' != '" + 35L + "'", long10 == 35L);
+    }
+
+
+@Test
+    public void test1779() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1779");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 0);
+    }
+
+
+@Test
+    public void test1784() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1784");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        tripsConfig0.setMinimalNoDataDuration((long) (byte) 1);
+        double double10 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalTripDuration((long) 10);
+        tripsConfig0.setMinimalNoDataDuration((long) ' ');
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 0.0d + "'", double10 == 0.0d);
+    }
+
+
+@Test
+    public void test1802() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1802");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        double double10 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalParkingDuration((long) 0);
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertTrue("'" + double10 + "' != '" + 0.0d + "'", double10 == 0.0d);
+    }
+
+
+@Test
+    public void test1844() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1844");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalParkingDuration((long) (short) -1);
+        long long4 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalTripDuration((long) ' ');
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + (-1L) + "'", long4 == (-1L));
+    }
+
+
+@Test
+    public void test1856() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1856");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        boolean boolean4 = tripsConfig0.getGreedyParking();
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+    }
+
+
+@Test
+    public void test1859() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1859");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        boolean boolean7 = tripsConfig0.getGreedyParking();
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+    }
+
+
+@Test
+    public void test1877() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1877");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalNoDataDuration((long) 10);
+        long long9 = tripsConfig0.getMinimalNoDataDuration();
+        tripsConfig0.setMinimalTripDistance(10.0d);
+        tripsConfig0.setMinimalNoDataDuration(32L);
+        tripsConfig0.setMinimalTripDistance((double) 10);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 97L + "'", long5 == 97L);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long9 + "' != '" + 10L + "'", long9 == 10L);
+    }
+
+
+@Test
+    public void test1886() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1886");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        tripsConfig0.setMinimalParkingDuration((long) 10);
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalNoDataDuration((long) 1);
+        long long11 = tripsConfig0.getMinimalNoDataDuration();
+        java.lang.Class<?> wildcardClass12 = tripsConfig0.getClass();
+        org.junit.Assert.assertTrue("'" + long11 + "' != '" + 1L + "'", long11 == 1L);
+        org.junit.Assert.assertNotNull(wildcardClass12);
+    }
+
+
+@Test
+    public void test1913() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1913");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        java.lang.Class<?> wildcardClass6 = tripsConfig0.getClass();
+        long long7 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalNoDataDuration((long) '#');
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+        org.junit.Assert.assertTrue("'" + long7 + "' != '" + 0L + "'", long7 == 0L);
+    }
+
+
+@Test
+    public void test1930() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1930");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        double double3 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalTripDistance((double) 100L);
+        org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
+    }
+
+
+@Test
+    public void test1932() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1932");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalParkingDuration((long) (byte) 100);
+        tripsConfig0.setMinimalTripDistance((double) 'a');
+        long long5 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 0L + "'", long5 == 0L);
+    }
+
+
+@Test
+    public void test1955() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1955");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setGreedyParking(false);
+        tripsConfig0.setMinimalTripDuration((long) (short) -1);
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        java.lang.Class<?> wildcardClass11 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance((double) (byte) -1);
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+
+@Test
+    public void test1959() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1959");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        long long5 = tripsConfig0.getMinimalTripDuration();
+        tripsConfig0.setMinimalParkingDuration((long) (-1));
+        tripsConfig0.setMinimalTripDistance((-1.0d));
+        java.lang.Class<?> wildcardClass10 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance((double) 10.0f);
+        tripsConfig0.setGreedyParking(true);
+        long long15 = tripsConfig0.getMinimalNoDataDuration();
+        org.junit.Assert.assertTrue("'" + long5 + "' != '" + 35L + "'", long5 == 35L);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+        org.junit.Assert.assertTrue("'" + long15 + "' != '" + 97L + "'", long15 == 97L);
+    }
+
+
+@Test
+    public void test1987() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1987");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        java.lang.Class<?> wildcardClass1 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDistance(1.0d);
+        long long4 = tripsConfig0.getMinimalTripDuration();
+        java.lang.Class<?> wildcardClass5 = tripsConfig0.getClass();
+        long long6 = tripsConfig0.getMinimalParkingDuration();
+        tripsConfig0.setMinimalParkingDuration(0L);
+        tripsConfig0.setMinimalTripDuration((long) (byte) 0);
+        org.junit.Assert.assertNotNull(wildcardClass1);
+        org.junit.Assert.assertTrue("'" + long4 + "' != '" + 0L + "'", long4 == 0L);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+        org.junit.Assert.assertTrue("'" + long6 + "' != '" + 0L + "'", long6 == 0L);
+    }
+
+
+@Test
+    public void test1992() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1992");
+        org.traccar.reports.model.TripsConfig tripsConfig0 = new org.traccar.reports.model.TripsConfig();
+        tripsConfig0.setMinimalTripDuration((long) '#');
+        tripsConfig0.setMinimalNoDataDuration((long) 'a');
+        double double5 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalParkingDuration(35L);
+        java.lang.Class<?> wildcardClass8 = tripsConfig0.getClass();
+        tripsConfig0.setMinimalTripDuration((long) 0);
+        double double11 = tripsConfig0.getMinimalTripDistance();
+        tripsConfig0.setMinimalNoDataDuration(0L);
+        tripsConfig0.setGreedyParking(false);
+        org.junit.Assert.assertTrue("'" + double5 + "' != '" + 0.0d + "'", double5 == 0.0d);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+        org.junit.Assert.assertTrue("'" + double11 + "' != '" + 0.0d + "'", double11 == 0.0d);
+    }
+
