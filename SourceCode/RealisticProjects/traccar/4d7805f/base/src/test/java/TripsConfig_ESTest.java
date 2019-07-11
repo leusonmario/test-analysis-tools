@@ -3,8 +3,6 @@
  * Thu Jul 11 19:55:19 GMT 2019
  */
 
-package org.br;
-
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.br.TripsConfig;
@@ -18,8 +16,8 @@ public class TripsConfig_ESTest extends TripsConfig_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test00()  throws Throwable  {
       TripsConfig tripsConfig0 = new TripsConfig();
-      boolean boolean0 = tripsConfig0.getUseIgnition();
-      assertFalse(boolean0);
+      //boolean boolean0 = tripsConfig0.getUseIgnition();
+      //assertFalse(boolean0);
   }
 
   @Test(timeout = 4000)
@@ -63,12 +61,12 @@ public class TripsConfig_ESTest extends TripsConfig_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test06()  throws Throwable  {
-      TripsConfig tripsConfig0 = new TripsConfig((-1.0), 1281L, (-2403L), true, 0L, true);
+      TripsConfig tripsConfig0 = new TripsConfig((-1.0), 1281L, (-2403L), true, 0L);
       long long0 = tripsConfig0.getMinimalParkingDuration();
       assertTrue(tripsConfig0.getGreedyParking());
       assertEquals((-1.0), tripsConfig0.getMinimalTripDistance(), 0.01);
       assertEquals(1281L, tripsConfig0.getMinimalTripDuration());
-      assertTrue(tripsConfig0.getUseIgnition());
+      //assertTrue(tripsConfig0.getUseIgnition());
       assertEquals((-2403L), long0);
       assertEquals(0L, tripsConfig0.getMinimalNoDataDuration());
   }
@@ -114,8 +112,8 @@ public class TripsConfig_ESTest extends TripsConfig_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test12()  throws Throwable  {
       TripsConfig tripsConfig0 = new TripsConfig();
-      tripsConfig0.setUseIgnition(false);
-      assertFalse(tripsConfig0.getUseIgnition());
+     // tripsConfig0.setUseIgnition(false);
+     // assertFalse(tripsConfig0.getUseIgnition());
   }
 
   @Test(timeout = 4000)
@@ -134,25 +132,25 @@ public class TripsConfig_ESTest extends TripsConfig_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test15()  throws Throwable  {
-      TripsConfig tripsConfig0 = new TripsConfig((-1.0), 1615L, 1615L, true, (-2016L), true);
+      TripsConfig tripsConfig0 = new TripsConfig((-1.0), 1615L, 1615L, true, (-2016L));
       double double0 = tripsConfig0.getMinimalTripDistance();
       assertEquals(1615L, tripsConfig0.getMinimalTripDuration());
       assertEquals((-2016L), tripsConfig0.getMinimalNoDataDuration());
       assertEquals(1615L, tripsConfig0.getMinimalParkingDuration());
       assertEquals((-1.0), double0, 0.01);
-      assertTrue(tripsConfig0.getUseIgnition());
+      //assertTrue(tripsConfig0.getUseIgnition());
       assertTrue(tripsConfig0.getGreedyParking());
   }
 
   @Test(timeout = 4000)
   public void test16()  throws Throwable  {
-      TripsConfig tripsConfig0 = new TripsConfig((-1.0), 1615L, 1615L, true, (-2016L), true);
-      boolean boolean0 = tripsConfig0.getUseIgnition();
+      TripsConfig tripsConfig0 = new TripsConfig((-1.0), 1615L, 1615L, true, (-2016L));
+      //boolean boolean0 = tripsConfig0.getUseIgnition();
       assertEquals((-2016L), tripsConfig0.getMinimalNoDataDuration());
       assertEquals((-1.0), tripsConfig0.getMinimalTripDistance(), 0.01);
       assertEquals(1615L, tripsConfig0.getMinimalParkingDuration());
       assertEquals(1615L, tripsConfig0.getMinimalTripDuration());
-      assertTrue(boolean0);
+      //assertTrue(boolean0);
       assertTrue(tripsConfig0.getGreedyParking());
   }
 }

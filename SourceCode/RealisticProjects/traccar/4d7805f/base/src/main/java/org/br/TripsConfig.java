@@ -63,4 +63,8 @@ public class TripsConfig {
     public void setMinimalNoDataDuration(long minimalNoDataDuration) {
         this.minimalNoDataDuration = minimalNoDataDuration;
     }
+
+    public String getFinal(){
+        return toString();
+    }
 }
