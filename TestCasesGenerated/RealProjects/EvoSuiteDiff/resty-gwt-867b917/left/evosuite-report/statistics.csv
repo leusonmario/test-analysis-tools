@@ -1,0 +1,4 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator,LINE;BRANCH;EXCEPTION;WEAKMUTATION;OUTPUT;METHOD;METHODNOEXCEPTION;CBRANCH,0.0,12,0
+org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator,LINE;BRANCH;EXCEPTION;WEAKMUTATION;OUTPUT;METHOD;METHODNOEXCEPTION;CBRANCH,0.0,12,0
+org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator,LINE;BRANCH;EXCEPTION;WEAKMUTATION;OUTPUT;METHOD;METHODNOEXCEPTION;CBRANCH,0.0,12,0
